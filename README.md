@@ -1,5 +1,5 @@
 # FreelaFlex
-O intuito desse projeto é criar uma plataforma de Freelance
+O FreelaFlex consiste em uma aplicação web de Freelance.
 
 ## Feito por:
 
