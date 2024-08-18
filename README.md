@@ -1,6 +1,4 @@
 # FreelaFlex
-O FreelaFlex consiste em uma aplicação web de Freelance.
-
 ## Objetivo:
 
 A FreelaFlex é uma plataforma Freelance inovadora que permite aos usuários contratar profissionais ou prestar serviços.
