@@ -17,7 +17,7 @@ A escolha da paleta de cores foi cuidadosamente feita para proporcionar uma nave
 * No `modo claro` utilizamos uma gama de azuis suaves que evoluem para o branco
 * No `modo escuro`, as cores transitam dos azuis para tons de cinza, criando um contraste equilibrado e sofisticado.
 
-A responsividade foi uma prioridade em nosso desenvolvimento, garantindo que o design se adapte perfeitamente a diferentes dispositivos, desde desktops até smartphones. Cada elemento foi planejado para manter a consistência e a clareza, independentemente da plataforma utilizada. Isso assegura uma experiência de uso contínua e coesa, seja em telas maiores ou menores, promovendo uma usabilidade superior e moderna.
+A **responsividade** foi uma prioridade em nosso desenvolvimento, garantindo que o design se adapte perfeitamente a diferentes dispositivos, desde desktops até smartphones. Cada elemento foi planejado para manter a consistência e a clareza, independentemente da plataforma utilizada. Isso assegura uma experiência de uso contínua e coesa, seja em telas maiores ou menores, promovendo uma usabilidade superior e moderna.
 
 Link do Design:
 https://www.figma.com/design/CMe3vke0hjx2sPRbMI2Bru/FreelaFlex?node-id=0-1&t=1Ii23SxbaRal5rDZ-1
