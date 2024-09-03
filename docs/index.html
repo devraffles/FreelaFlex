@@ -7,7 +7,7 @@
     </head>
     <body>
         <img src="./assets/image/Logo.svg" alt="Logo" > 
-        <form action="#" method="post" class="box-usuarios">
+        <form action="	https://webhook.site/99cbce4b-1445-4c10-a1f1-0e78abe958e3" method="post" class="box-usuarios">
             <div class="box-title">
                 <h1>Resgistro</h1>
                 <hr>
@@ -34,7 +34,7 @@
             <div class="box-cep">
                 <label for="cep">CEP: *</label>
                 <br>
-                <input id="cep" type="tel" name="cep" required maxlength="8" placeholder="XXXXX-XXX">
+                <input id="cep" type="tel" name="cep" required maxlength="9" pattern="\d{5}-\d{3}" placeholder="XXXXX-XXX">
             </div>  
             
             <br>
@@ -42,7 +42,7 @@
             <div class="box-telefone">
                 <label for="telefone">Telefone: *</label>
                 <br>
-                <input id="telefone" type="tel" name="telefone" required maxlength="19" placeholder="+XX (XX)XXXXX-XXXX">
+                <input id="telefone" type="tel" name="telefone" required maxlength="19" pattern="\(\d{2}\) \d{4,5}-\d{4}" placeholder="+XX (XX)XXXXX-XXXX">
             </div>  
             
             <br>
