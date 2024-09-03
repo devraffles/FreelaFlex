@@ -1,30 +1,67 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FreelaFlex - Home</title>
-</head>
-<body>
-    <img src="./assets/image/logo.png" alt="Logo" > 
-    <h1>
-        Primeiro commit HMTL do FreelaFlex
-    </h1>
-    <hr>
-    <p>
-        A FreelaFlex é uma plataforma Freelance inovadora que permite aos usuários contratar profissionais ou prestar serviços.
-        Conectando talentos a projetos que atendem às suas necessidades e objetivos, nossa ideia é fornecer flexibilidade e autonomia.
-        A FreelaFlex oferece uma experiência personalizada e eficiente para todos os envolvidos, seja como cliente ou freelancer.
-    </p>
-    <hr>
-    <h2>
-        Feito por:
-    </h2>
-    <ul>
-        <li><a href="https://github.com/devraffles"> Rafael dos Santos Giorgi </a> - Dev Fullstack</li>
-        <li><a href="https://github.com/Vinihcgomes"> Vinicius Henrique Chamarelli Gomes </a> - Dev Fullstack</li>
-        <li><a href="https://github.com/Kaua-programin">Kauã Hipólito Rodrigues </a> - Dev Front-end</li>
-        <li><a href="https://github.com/LucaLevanteze"> Luca Silva Levanteze </a> - UI/UX Designer & Dev Front-End</li>
-    </ul>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FreelaFlex - Resgistro</title>
+    </head>
+    <body>
+        <img src="./assets/image/Logo.svg" alt="Logo" > 
+        <form action="#" method="post" class="box-usuarios">
+            <div class="box-title">
+                <h1>Resgistro</h1>
+                <hr>
+            </div>
+            
+            <br>
+
+            <div class="box-username">
+                <label for="username">Username: *</label>
+                <br>
+                <input id="username" type="text" name="username" required placeholder="Frelaflex">
+            </div>
+            
+            <br>
+
+            <div class="box-password">
+                <label for="password">Senha: *</label>
+                <br>
+                <input id="password" type="password" name="password" required placeholder="********">
+            </div>  
+            
+            <br>
+
+            <div class="box-cep">
+                <label for="cep">CEP: *</label>
+                <br>
+                <input id="cep" type="tel" name="cep" required maxlength="8" placeholder="XXXXX-XXX">
+            </div>  
+            
+            <br>
+
+            <div class="box-telefone">
+                <label for="telefone">Telefone: *</label>
+                <br>
+                <input id="telefone" type="tel" name="telefone" required maxlength="19" placeholder="+XX (XX)XXXXX-XXXX">
+            </div>  
+            
+            <br>
+
+            <div class="box-email">
+                <label for="email">Email: *</label>
+                <br>
+                <input id="email" type="email" name="email" required placeholder="email@example.com">
+            </div>  
+            
+            <br>
+
+            <div class="box-button">
+                <input type="submit" value="Entrar"></input>
+            </div>
+
+            <div class="box-registrar-se">
+                <a href="#"><p>Login</p></a>
+            </div>
+        </form>
+    </body>
 </html>
