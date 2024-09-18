@@ -29,9 +29,9 @@ toggle.addEventListener("click", () => {
 function switchMoon(theme) {
   moons.forEach((moon) => {
       if (theme === "dark") {
-        moon.src = "/assets/image/moonDark.svg";
+        moon.src = "/FreelaFlex/assets/image/moonDark.svg";
       } else {
-        moon.src = "/assets/image/moonLight.svg";
+        moon.src = "/FreelaFlex/assets/image/moonLight.svg";
       }
     });
 }
@@ -39,9 +39,9 @@ function switchMoon(theme) {
 function switchLogo(theme) {
   logos.forEach((logo) => {
     if (theme === "dark") {
-      logo.src = "/assets/image/logoDark.svg";
+      logo.src = "/FreelaFlex/assets/image/logoDark.svg";
     } else {
-      logo.src = "/assets/image/logoLight.svg";
+      logo.src = "/FreelaFlex/assets/image/logoLight.svg";
     }
   });
 }
