@@ -2,66 +2,160 @@
 <html lang="pt-BR">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>FreelaFlex - Resgistro</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <link rel="stylesheet" href="./style/style.css"/>
+        <link rel="stylesheet" href="./style/style.css"/>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet"/>
+
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+
+        <link rel="icon" href="./assets/image/logoDark.svg">
+
+        <title>FreelaFlex - Home</title>
     </head>
     <body>
-        <img src="./assets/image/Logo.svg" alt="Logo" > 
-        <form action="https://webhook.site/9da5595d-140b-4fed-bf07-bc962284ae85" method="post" class="box-usuarios">
-            <div class="box-title">
-                <h1>Resgistro</h1>
-                <hr>
+        <header
+            data-aos="fade-down"
+            data-aos-duration="1250"
+        >
+            <a class="login" href="./index.html"><img id="logo" class="logo" src="./assets/image/logoLight.svg" alt="logo"></a>
+            <nav>
+                <ul class="nav--links">
+                    <li><a href="#">Projetos<a></li>
+                    <li><a href="#">Como Funciona?</a></li>
+                    <li><a href="#">Serviços</a></li>
+                </ul>
+            </nav>
+               
+            <div class="dark-mode">
+                <button id="toggle" class="sun"><img src="./assets/image/sun.svg" alt="sun"></button>
+                <button id="refresh" class="moon"><img class="moon-img" src="./assets/image/moonLight.svg" alt="moon"></button>
             </div>
-            
-            <br>
-
-            <div class="box-username">
-                <label for="username">Username: *</label>
-                <br>
-                <input id="username" type="text" name="username" required placeholder="Frelaflex">
+        </header>
+    <main class="main-content">
+        <section>
+            <article class="text-button">
+                <div class="div-Main"    
+                    data-aos="fade-right"
+                    data-aos-duration="2000"
+                >
+                    <div class="div-Main-Title">
+                        <div class="underline-home"></div>
+                        <div>
+                            <h3 class="title-main">Você precisa contratar um Freelance? É fácil, rápido e seguro</h3>
+                            <p class="p-main">Entregas no prazo e qualidade garantidas na FreelaFlex, o maior site freelancer do mundo.</p>
+                        </div>
+                    </div>
+                    <div class="buttons-home">
+                        <a href="./view/proposta/proposta.html"><button class="btn-blue">Eu quero trabalhar</button></a>
+                        <a href="#"><button class="btn-white">Você quer contratar?</button></a>
+                    </div>
+                </div>
+            </article>
+            <aside 
+                data-aos="fade-left"
+                data-aos-duration="2000"
+            >
+                <img class="home-img" src="./assets/image/homeIMG.svg" alt="homeIMG">
+            </aside>
+        </section>
+        <section class="carrou"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+        >
+            <div class="pic-ctn">
+                <img src="./assets/image/programming-pic.jpg" alt="" class="pic">
+                <img src="./assets/image/audio-pic.jpg" alt="" class="pic">
+                <img src="./assets/image/marketing-pic.jpg" alt="" class="pic">
+                <img src="./assets/image/video-pic.jpg" alt="" class="pic">
+                <img src="./assets/image/bulding-pic.jpg" alt="" class="pic">
             </div>
-            
-            <br>
+            <article class="text-carrou">
+                <div class="underline-home2"></div>
+                <div class="div-Main">
+                    <h3 class="title-main">Serviços</h3>
+                    <p class="p-main">Encontre freelancers qualificados para diversos serviços, desde design gráfico e desenvolvimento web até redação e marketing digital. Soluções sob medida, entregues com qualidade e no prazo.</p>
+            </article>  
+        </section>
+    </main>
+        <footer>
+            <div id="footer-content">
+                <img id="logo-footer" class="logo" src="./assets/image/logoLight.svg" alt="logo">
+                <ul class="footer-list">
+                    
+                    <li class="footer-title">
+                        <h3 class="footer-underline">Informações</h3>
+                        <div class="underline"></div>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Sobre-nos</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Privacidade</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">FAQ/Contato</a>
+                    </li>
+                </ul>
+                
+                <ul class="footer-list"> 
+                    <li class="footer-title">
+                        <h3 class="footer-underline">Conta</h3>
+                        <div class="underline2"></div>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Perfil</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Publicações</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Serviços</a>
+                    </li>
+                </ul>
+                
+                <div class="footer-list">
+                    <li class="footer-title">
+                        <h3 class="footer-underline">Contate-nos</h3>
+                        <div class="underline"></div>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Fale conosco</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Freela@flex.com</a>
+                    </li>
+                </div>
 
-            <div class="box-password">
-                <label for="password">Senha: *</label>
-                <br>
-                <input id="password" type="password" name="password" required placeholder="********">
-            </div>  
-            
-            <br>
-
-            <div class="box-cep">
-                <label for="cep">CEP: *</label>
-                <br>
-                <input id="cep" type="tel" name="cep" required maxlength="9" pattern="\d{5}-\d{3}" placeholder="XXXXX-XXX">
-            </div>  
-            
-            <br>
-
-            <div class="box-telefone">
-                <label for="telefone">Telefone: *</label>
-                <br>
-                <input id="telefone" type="tel" name="telefone" required maxlength="19" pattern="+\d{2} \(\d{2}\) \d{4,5}-\d{4}" placeholder="+XX (XX)XXXXX-XXXX">
-            </div>  
-            
-            <br>
-
-            <div class="box-email">
-                <label for="email">Email: *</label>
-                <br>
-                <input id="email" type="email" name="email" required placeholder="email@example.com">
-            </div>  
-            
-            <br>
-
-            <div class="box-button">
-                <input type="submit" value="Entrar"></input>
+                <div id="footer-social-media">
+                        <a href="#" class="footer-link" id="github">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="#" class="footer-link" id="facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="footer-link" id="instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" class="footer-link" id="linkedin">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                </div>
             </div>
-
-            <div class="box-registrar-se">
-                <a href="#"><p>Login</p></a>
+        </div>
+            <div class="footer-copy">
+                <p id="copyritht">FreelaFlex © 2024 | FreelaFlex - Todos direitos reservados.</p>
             </div>
-        </form>
+        </footer>
+
+    <script src="./js/script.js"></script>
+    <script src="./js/aos.js"></script>
     </body>
 </html>
