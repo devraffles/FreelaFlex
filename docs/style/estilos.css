@@ -995,6 +995,7 @@ img:nth-child(5) {
 @media (max-width: 768px) {
     .main-projeto-list{
         flex-direction: column;
+        overflow: hidden;
     }
 
     .filter-title{
