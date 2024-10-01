@@ -697,6 +697,10 @@ img:nth-child(5) {
     margin-top: 14px;
 }
 
+.input-text{
+    color: var(--light-Letter);
+}
+
 @media (max-width: 768px) {
     .row-projeto-form{
         justify-content: space-between;
