@@ -28,9 +28,9 @@ toggle.addEventListener("click", () => {
 function switchLogo(theme) {
   logos.forEach((logo) => {
     if (theme === "dark") {
-      logo.src = "/docs/assets/img/logo/logoDark.svg";
+      logo.src = "/FreelaFlex/assets/img/logo/logoDark.svg";
     } else {
-      logo.src = "/docs/assets/img/logo/logoLight.svg";
+      logo.src = "/FreelaFlex/assets/img/logo/logoLight.svg";
     }
   });
 }
