@@ -701,6 +701,10 @@ img:nth-child(5) {
     color: var(--light-Letter);
 }
 
+.input-text-area{
+    color: var(--light-Letter);
+}
+
 @media (max-width: 768px) {
     .row-projeto-form{
         justify-content: space-between;
