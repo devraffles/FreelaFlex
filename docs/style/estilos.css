@@ -158,6 +158,10 @@ main section {
     flex: 1;
 }
 
+.main-content{
+    overflow: hidden;
+}
+
 .div-Main-Title{
     display: flex;
     flex-direction: row;
@@ -329,12 +333,25 @@ img:nth-child(5) {
         margin-left: 14px;
         font-size: 18px;
         width: 10rem;
+        font-size: 14px;
+    }
+    .buttons-home{
+        flex-direction: column;
     }
     .pic-ctn {
         position: relative;
         width: 380px;
         height: 250px;
         margin-left: 50px;
+    }
+    .title-main{
+        font-size: 22px;
+    }
+    .p-main {
+        font-size: 18px;
+    }
+    .row-home{
+        margin-left: 0;
     }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -356,14 +373,13 @@ img:nth-child(5) {
         flex: 1;
     }
     .title-main {
-        font-size: 1.5em;
+        font-size: 24px;
     }
     .p-main {
         font-size: 1em;
     }
     .home-img {
-        width: 30vh;
-        margin: 5px;
+        width: 10vh;
     }
     .pic-ctn {
         margin-left: 40px;
