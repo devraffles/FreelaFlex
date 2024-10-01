@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <link rel="stylesheet" href="../../style/estilos.css"/>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet"/>
+
+        <link rel="icon" href="../../assets/image/logoDark.svg">
+        
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+
+        <title>FreelaFlex - Projeto - Lista</title>
+    </head>
+    <body>
+        <header class="header">
+            <a class="login" href="../../index.html"><img id="logo" class="logo" src="./assets/img/logo/logoLight.svg" alt="logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="./list.html">Projetos<a></li>
+                    <li><a href="#">Como Funciona?</a></li>
+                    <li><a href="#">Serviços</a></li>
+                </ul>
+            </nav>
+            
+            <input type="checkbox" id="toggle" class="toggle"/>
+            <label class="label" for="toggle">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+                <div class="ball"></div>
+            </label>
+        </header>
+
+        <div class="btn-filtro" data-aos="fade-left" data-aos-duration="2000">
+            <button id="btnFiltro" name="btnFiltro">
+                <i class="fa-solid fa-sliders"></i>
+            </button>
+        </div>
+
+        <main class="main-projeto-list">
+           <aside class="filter" id="filter">
+                <div class="category" data-aos="fade-right" data-aos-duration="2000">
+                    <div class="filter-title">
+                        <h1>Categoria de projeto</h1>
+                        <fieldset id="group1">
+                            <div class="checkbox-filter">
+                                <div class="checkbox">
+                                    <input class="checkbox-input" type="radio" name="filterCat" id="todas_cat" checked>
+                                    <label for="todas_cat">Todas as categorias</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input class="checkbox-input" type="radio" name="filterCat" id="ti">
+                                    <label for="ti">TI e Programação</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input class="checkbox-input" type="radio" name="filterCat" id="design" value="design">
+                                    <label for="design">Design e Multimedia</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input class="checkbox-input" type="radio" name="filterCat" id="traducao" value="traducao">
+                                    <label for="traducao">Tradução e conteúdos</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input class="checkbox-input" type="radio" name="filterCat" id="marketing" value="marketing">
+                                    <label for="marketing">Marketing e Vendas</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input class="checkbox-input" type="radio" name="filterCat" id="suporte_administrativo" value="suporte_administrativo">
+                                    <label for="suporte_administrativo">Suporte Administrativo</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input class="checkbox-input" type="radio" name="filterCat" id="juridico" value="juridico">
+                                    <label for="juridico">Jurídico</label>
+                                </div class="checkbox">
+                                <div class="checkbox">
+                                    <input class="checkbox-input" type="radio" name="filterCat" id="finanças_administracao" value="finanças_administracao">
+                                    <label for="finanças_administracao">Finanças e Administração</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input class="checkbox-input" type="radio" name="filterCat" id="engenharia" value="engenharia">
+                                    <label for="engenharia">Engenharia e Manufatura</label>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+                <div class="habilidades-filter" data-aos="fade-right" data-aos-duration="2400">
+                    <div class="filter-title">
+                        <h1>Habilidades</h1>
+                        <div class="select">
+                            <select name="habi" id="habi">
+                                <option value="volvo">PHP</option>
+                                <option value="saab">Node.js</option>
+                                <option value="mercedes">JS</option>
+                                <option value="audi">HTML</option>
+                                <option value="audi">CSS</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="idioma" data-aos="fade-right" data-aos-duration="2600">
+                    <div class="filter-title">
+                        <h1>Idioma</h1>
+                        <div class="card">
+                            <div class="button-text-content">
+                                <div class="cat-idioma">
+                                    <label>
+                                       <input type="checkbox" value="1"><span>Inglês</span></input> 
+                                    </label>
+                                </div>
+                                <div class="cat-idioma">
+                                    <label>
+                                       <input type="checkbox" value="1"><span>Espanhol</span></input> 
+                                    </label>
+                                </div>
+                                <div class="cat-idioma">
+                                    <label>
+                                       <input type="checkbox" value="1"><span>Português</span></input> 
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           </aside>
+           <section class="section-projeto-list">
+                <div class="projeto-list"  data-aos="fade-left" data-aos-duration="2000">
+                    <div class="projetos">
+                        <div class="row-projeto-list">
+                            <div class="nome-proj-list">
+                                <h1>Nome do Projeto</h1>
+                            </div>
+                            <div class="qtd-frela">
+                                <span id="spnQtdFreela" class="show">
+                                    X
+                                </span>
+                                <i class="fa-regular fa-user"></i>
+                            </div>
+                        </div>
+                        <div class="row-projeto-list">
+                            <div class="descricao-div">
+                                <h1>Descrição:</h1>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            </div>
+                        </div>
+                        <div class="row-projeto-list">
+                            <div class="habilidades-div">
+                                <h1>Habilidades:</h1>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            </div>
+                        </div>
+                        <div class="row-btn-projeto">
+                            <div class="qtd_proposta">
+                                <span>X</span>
+                                <h3>Propostas</h3>
+                            </div>
+                            <a href="../proposta/form.html">
+                                <button class="btn-list-projeto" type="submit">
+                                    Fazer proposta
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="projeto-list"  data-aos="fade-left" data-aos-duration="2400">
+                    <div class="projetos">
+                        <div class="row-projeto-list">
+                            <div class="nome-proj-list">
+                                <h1>Nome do Projeto</h1>
+                            </div>
+                            <div class="qtd-frela">
+                                <span id="spnQtdFreela" class="show">
+                                    X
+                                </span>
+                                <i class="fa-regular fa-user"></i>
+                            </div>
+                        </div>
+                        <div class="row-projeto-list">
+                            <div class="descricao-div">
+                                <h1>Descrição:</h1>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            </div>
+                        </div>
+                        <div class="row-projeto-list">
+                            <div class="habilidades-div">
+                                <h1>Habilidades:</h1>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            </div>
+                        </div>
+                        <div class="row-btn-projeto">
+                            <div class="qtd_proposta">
+                                <span>X</span>
+                                <h3>Propostas</h3>
+                            </div>
+                            <a href="../proposta/form.html">
+                                <button class="btn-list-projeto" type="submit">
+                                    Fazer proposta
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+           </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container-footer">
+                <div class="logo-footer">
+                    <img id="logo" class="logo" src="./assets/img/logo/logoLight.svg" alt="logo">
+                </div>
+                <div class="content-footer">
+                    <div class="info-footer">
+                        <div class="title-footer">
+                            <h1>Informações</h1>
+                        </div>
+                        <a href="#"><p>Sobre-nos</p></a>
+                        <a href="#"><p>Politica de Privacidade</p></a>
+                        <a href="#"><p>FAQ</p></a>
+                    </div>
+                    <div class="info-footer">
+                        <h1>Conta</h1>
+                        <a href="#"><p>Perfil</p></a>
+                        <a href="#"><p>Posts</p></a>
+                        <a href="#"><p>Serviços</p></a>
+                    </div>
+                    <div class="info-footer">
+                        <h1>Contate-nos</h1>
+                        <a href="#"><p>Fale conosco</p></a>
+                        <a href="#"><p>freela@flex.com</p></a>
+                    </div>
+                </div>
+                <div class="rede-footer">
+                    <i class="fa-brands fa-github"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+            </div>
+            
+            <p class="direct-footer">
+                FreelaFlex &copy; 2024 | FreelaFlex - Todos direitos reservados.
+            </p>
+        </footer>
+
+    <script src="../../js/script.js"></script>
+    <script src="../../js/aos.js"></script>
+    </body>
+</html>

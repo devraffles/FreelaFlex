@@ -1,6 +1,7 @@
+
+//========================= Dark/White Mode ==================================
 const toggle = document.getElementById("toggle");
 const logos = document.querySelectorAll(".logo");
-const moons = document.querySelectorAll(".moon-img");
 let theme = window.localStorage.getItem("theme");
 
 if (theme === "dark") {
@@ -17,32 +18,140 @@ toggle.addEventListener("click", () => {
     window.localStorage.setItem("theme", "light");
     theme = "light"; 
     switchLogo("light");
-    switchMoon("light");
   } else {
     window.localStorage.setItem("theme", "dark");
     theme = "dark"; 
     switchLogo("dark");
-    switchMoon("dark");
   }
 });
-
-function switchMoon(theme) {
-  moons.forEach((moon) => {
-      if (theme === "dark") {
-        moon.src = "/FreelaFlex/assets/image/moonDark.svg";
-      } else {
-        moon.src = "/FreelaFlex/assets/image/moonLight.svg";
-      }
-    });
-}
 
 function switchLogo(theme) {
   logos.forEach((logo) => {
     if (theme === "dark") {
-      logo.src = "/FreelaFlex/assets/image/logoDark.svg";
+      logo.src = "/docs/assets/img/logo/logoDark.svg";
     } else {
-      logo.src = "/FreelaFlex/assets/image/logoLight.svg";
+      logo.src = "/docs/assets/img/logo/logoLight.svg";
     }
   });
 }
 
+//========================= troca do span por inout Nome do projeto ==================================
+const inputNomeProjeto = document.getElementById("txtNomeProjeto");
+const spanNomeProjeto = document.getElementById("spnNomeProjeto");
+const btnNomeProjeto = document.getElementById("btnNomeProjeto");
+
+if (btnNomeProjeto) {
+  btnNomeProjeto.addEventListener("click", function(e) {
+      e.preventDefault();
+      inputNomeProjeto.value = spanNomeProjeto.innerHTML;
+      spanNomeProjeto.classList.remove('show');
+      spanNomeProjeto.classList.add('hide');
+      inputNomeProjeto.classList.remove('hide');
+      inputNomeProjeto.classList.add('show');
+  });
+}
+
+if (inputNomeProjeto) {
+  inputNomeProjeto.addEventListener("keypress", function(e) {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      console.log(inputNomeProjeto.value);
+      console.log(spanNomeProjeto.innerHTML);
+      spanNomeProjeto.innerHTML = inputNomeProjeto.value;
+      spanNomeProjeto.classList.remove('hide');
+      spanNomeProjeto.classList.add('show');
+      inputNomeProjeto.classList.remove('show');
+      inputNomeProjeto.classList.add('hide');
+    }
+  });
+}
+
+//========================= troca do span por inout Nome do Descrição ==================================
+const btnDescricao = document.getElementById("btnDescricao");
+const spanDescricao = document.getElementById("spnDescricao");
+const inputDescricao = document.getElementById("txtDescricao");
+
+if (btnDescricao) {
+  btnDescricao.addEventListener("click", function(e) {
+      e.preventDefault();
+      spanDescricao.classList.remove('show');
+      spanDescricao.classList.add('hide');
+      inputDescricao.classList.remove('hide');
+      inputDescricao.classList.add('show');
+  });
+}
+
+if (inputDescricao) {
+  inputDescricao.addEventListener("keypress", function(e) {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      console.log(inputDescricao.value);
+      console.log(spanDescricao.innerHTML);
+      spanDescricao.innerHTML = inputDescricao.value;
+      spanDescricao.classList.remove('hide');
+      spanDescricao.classList.add('show');
+      inputDescricao.classList.remove('show');
+      inputDescricao.classList.add('hide');
+    }
+  });
+}
+
+//========================= troca do span por inout Nome do Habilidade ==================================
+const btnHabilidades = document.getElementById("btnHabilidades");
+const spnHabilidades = document.getElementById("spnHabilidades");
+const txtHabilidades = document.getElementById("txtHabilidades");
+
+if (btnHabilidades) {
+  btnHabilidades.addEventListener("click", function(e) {
+      e.preventDefault();
+      spnHabilidades.classList.remove('show');
+      spnHabilidades.classList.add('hide');
+      txtHabilidades.classList.remove('hide');
+      txtHabilidades.classList.add('show');
+  });
+}
+
+if (txtHabilidades) {
+  txtHabilidades.addEventListener("keypress", function(e) {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      console.log(txtHabilidades.value);
+      console.log(spnHabilidades.innerHTML);
+      spnHabilidades.innerHTML = txtHabilidades.value;
+      spnHabilidades.classList.remove('hide');
+      spnHabilidades.classList.add('show');
+      txtHabilidades.classList.remove('show');
+      txtHabilidades.classList.add('hide');
+    }
+  });
+}
+
+//========================= btn filtro ==================================
+const btnFiltro = document.getElementById("btnFiltro");
+const divFiltro = document.getElementById("filter");
+
+if (btnFiltro) {
+  btnFiltro.addEventListener("click", function(e) {
+    e.preventDefault();
+    if (divFiltro) {
+      if (divFiltro.style.display === "none") {
+        divFiltro.style.display = "flex";
+      } else {
+        divFiltro.style.display = "none";
+      }
+    }
+  });
+}
+
+//========================= textarea ==================================
+function auto_grow(e) {
+  e.style.height = "5px";
+  e.style.height = (e.scrollHeight) + "px";
+}
+
+//========================= window resize ==================================
+window.addEventListener("resize", (e) => {
+    if (window.innerWidth >= "1200"){
+      divFiltro.style.display = "flex";
+    }
+});

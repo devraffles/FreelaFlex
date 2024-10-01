@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <link rel="stylesheet" href="../../style/estilos.css"/>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet"/>
+
+        <link rel="icon" href="../../assets/image/logoDark.svg">
+        
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+
+        <title>FreelaFlex - Projeto - Form</title>
+    </head>
+    <body>
+        <header class="header">
+            <a class="login" href="../../index.html"><img id="logo" class="logo" src="./assets/img/logo/logoLight.svg" alt="logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="./list.html">Projetos<a></li>
+                    <li><a href="#">Como Funciona?</a></li>
+                    <li><a href="#">Serviços</a></li>
+                </ul>
+            </nav>
+            
+            <input type="checkbox" id="toggle" class="toggle"/>
+            <label class="label" for="toggle">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+                <div class="ball"></div>
+            </label>
+        </header>
+
+        <main class="main-projeto-form">
+            <form action="https://webhook.site/9da5595d-140b-4fed-bf07-bc962284ae85" method="post">
+                <section class="section-projeto-form" data-aos="fade-right" data-aos-duration="2000">
+                    <div class="row-projeto-form">
+                        <div class="nome-proj">
+                            <button id="btnNomeProjeto" class="inlineButton"><i class="fa-solid fa-pen-to-square"></i></button>
+                            <span id="spnNomeProjeto" class="show">Nome do Projeto</span>
+                            <input class="input-text hide" type="text" id="txtNomeProjeto" required placeholder="Nome do Projeto">
+                        </div>
+                        <div class="qtd-frela">
+                            <span id="spnQtdFreela" class="show">
+                                X
+                            </span>
+                            <i class="fa-regular fa-user"></i>
+                        </div>
+                    </div>
+                    <div class="row-projeto-form">
+                        <div class="descricao-div">
+                            <h1>Descrição:</h1>
+                            <div class="descricao">
+                                <button id="btnDescricao" class="inlineButton"><i class="fa-solid fa-pen-to-square"></i></button>
+                                <span id="spnDescricao" class="show">Descrição...</span>
+                                <textarea oninput="auto_grow(this)" rows="1" cols="45" id="txtDescricao" class="input-text-area hide" type="text" required placeholder="Descrição..."></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-projeto-form">
+                        <div class="habilidades-div">
+                            <h1>Habilidades:</h1>
+                            <div class="habilidades">
+                                <button id="btnHabilidades" class="inlineButton"><i class="fa-solid fa-pen-to-square"></i></button>
+                                <span id="spnHabilidades" class="show">Habilidades...</span>
+                                <textarea oninput="auto_grow(this)" rows="1" cols="45" id="txtHabilidades" class="input-text-area hide" type="text" required placeholder="Habilidades..."></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-btn">
+                        <button class="btn-form-proposta" type="submit">
+                            Publicar
+                        </button>
+                    </div>
+                </section>
+
+                <section class="section-projeto-form" data-aos="fade-left" data-aos-duration="2000">
+                    <h1>
+                        Selecione as categorias do projeto
+                    </h1>
+                    <div class="row-projeto-form">
+                        <div class="card">
+                            <div class="button-text-content">
+                                <div class="cat">
+                                    <label>
+                                       <input type="checkbox" value="1"><span>Design e Multimedia</span></input> 
+                                    </label>
+                                </div>
+                                <div class="cat">
+                                    <label>
+                                       <input type="checkbox" value="1"><span>Tradução e conteúdos</span></input> 
+                                    </label>
+                                </div>
+                                <div class="cat">
+                                    <label>
+                                       <input type="checkbox" value="1"><span>Marketing e Vendas</span></input> 
+                                    </label>
+                                </div>
+                                <div class="cat">
+                                    <label>
+                                       <input type="checkbox" value="1"><span>Jurídico</span></input> 
+                                    </label>
+                                </div>
+                                <div class="cat">
+                                    <label>
+                                       <input type="checkbox" value="1"><span>Finanças e Administração</span></input> 
+                                    </label>
+                                </div>
+                                <div class="cat">
+                                    <label>
+                                       <input type="checkbox" value="1"><span>Engenharia e Manufatura</span></input> 
+                                    </label>
+                                </div>
+                                <div class="cat">
+                                    <label>
+                                       <input type="checkbox" value="1"><span>TI e Programação</span></input> 
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </form>
+
+            <button class="btn-form-proposta" type="submit" data-aos="fade-up" data-aos-duration="2000">
+                Meus Projetos
+            </button>
+        </main>
+
+        <footer class="footer">
+            <div class="container-footer">
+                <div class="logo-footer">
+                    <img id="logo" class="logo" src="./assets/img/logo/logoLight.svg" alt="logo">
+                </div>
+                <div class="content-footer">
+                    <div class="info-footer">
+                        <h1>Informações</h1>
+                        <a href="#"><p>Sobre-nos</p></a>
+                        <a href="#"><p>Politica de Privacidade</p></a>
+                        <a href="#"><p>FAQ</p></a>
+                    </div>
+                    <div class="info-footer">
+                        <h1>Conta</h1>
+                        <a href="#"><p>Perfil</p></a>
+                        <a href="#"><p>Posts</p></a>
+                        <a href="#"><p>Serviços</p></a>
+                    </div>
+                    <div class="info-footer">
+                        <h1>Contate-nos</h1>
+                        <a href="#"><p>Fale conosco</p></a>
+                        <a href="#"><p>freela@flex.com</p></a>
+                    </div>
+                </div>
+                <div class="rede-footer">
+                    <i class="fa-brands fa-github"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+            </div>
+            
+            <p class="direct-footer">
+                FreelaFlex &copy; 2024 | FreelaFlex - Todos direitos reservados.
+            </p>
+        </footer>
+
+    <script src="../../js/script.js"></script>
+    <script src="../../js/aos.js"></script>
+    </body>
+</html>

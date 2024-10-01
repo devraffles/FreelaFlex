@@ -4,48 +4,43 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-        <link rel="stylesheet" href="/FreelaFlex/style/style.css"/>
-        <link rel="stylesheet" href="/FreelaFlex/style/style.css"/>
+        <link rel="stylesheet" href="./style/estilos.css"/>
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-
         <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet"/>
+
+        <link rel="icon" href="./assets/img/logo/logoDark.svg">
 
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
 
-        <link rel="icon" href="/FreelaFlex/assets/image/logoDark.svg">
-
         <title>FreelaFlex - Home</title>
     </head>
     <body>
-        <header
-            data-aos="fade-down"
-            data-aos-duration="1250"
-        >
-            <a class="login" href="/FreelaFlex/index.html"><img id="logo" class="logo" src="/FreelaFlex/assets/image/logoLight.svg" alt="logo"></a>
+        <header class="header" data-aos="fade-down" data-aos-duration="1600">
+            <a class="login" href="./index.html"><img id="logo" class="logo" src="./assets/img/logo/logoLight.svg" alt="logo"></a>
             <nav>
-                <ul class="nav--links">
-                    <li><a href="#">Projetos<a></li>
+                <ul>
+                    <li><a href="./view/projeto/list.html">Projetos<a></li>
                     <li><a href="#">Como Funciona?</a></li>
                     <li><a href="#">Serviços</a></li>
                 </ul>
             </nav>
-               
-            <div class="dark-mode">
-                <button id="toggle" class="sun"><img src="/FreelaFlex/assets/image/sun.svg" alt="sun"></button>
-                <button id="refresh" class="moon"><img class="moon-img" src="/FreelaFlex/assets/image/moonLight.svg" alt="moon"></button>
-            </div>
+            
+            <input type="checkbox" id="toggle" class="toggle"/>
+            <label class="label" for="toggle">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+                <div class="ball"></div>
+            </label>
         </header>
-    <main class="main-content">
-        <section>
-            <article class="text-button">
-                <div class="div-Main"    
-                    data-aos="fade-right"
-                    data-aos-duration="2000"
-                >
+
+        <main class="main-content">
+            <section class="row-home">
+                <article class="text-button" data-aos="zoom-out-right" data-aos-duration="2000">
                     <div class="div-Main-Title">
                         <div class="underline-home"></div>
                         <div>
@@ -54,108 +49,74 @@
                         </div>
                     </div>
                     <div class="buttons-home">
-                        <a href="/FreelaFlex/view/proposta/proposta.html"><button class="btn-blue">Eu quero trabalhar</button></a>
-                        <a href="#"><button class="btn-white">Você quer contratar?</button></a>
+                        <a href="./view/projeto/list.html"><button class="btn-blue">Eu quero trabalhar</button></a>
+                        <a href="./view/projeto/form.html"><button class="btn-white">Você quer contratar?</button></a>
+                    </div>
+                </article>
+                <aside data-aos="zoom-out-left" data-aos-duration="2000">
+                    <img class="home-img" src="./assets/img/home/homeIMG.svg" alt="homeIMG">
+                </aside>
+            </section>
+            <section class="row-home" data-aos="fade-up" data-aos-duration="3000">
+                <aside>
+                    <div class="pic-ctn">
+                        <img src="./assets/img/slider/programming-pic.jpg" alt="" class="pic">
+                        <img src="./assets/img/slider/audio-pic.jpg" alt="" class="pic">
+                        <img src="./assets/img/slider/marketing-pic.jpg" alt="" class="pic">
+                        <img src="./assets/img/slider/video-pic.jpg" alt="" class="pic">
+                        <img src="./assets/img/slider/bulding-pic.jpg" alt="" class="pic">
+                    </div>
+                </aside>
+                <article class="text-button">
+                    <div class="div-Main-Title">
+                        <div class="underline-home2"></div>
+                        <div>
+                            <h3 class="title-main">Serviços</h3>
+                            <p class="p-main">Encontre freelancers qualificados para diversos serviços, desde design gráfico e desenvolvimento web até redação e marketing digital. Soluções sob medida, entregues com qualidade e no prazo.</p>    
+                        </div>
+                    </div>
+                </article>  
+            </section>
+        </main>
+        
+        <footer class="footer">
+            <div class="container-footer">
+                <div class="logo-footer">
+                    <img id="logo" class="logo" src="./assets/img/logo/logoLight.svg" alt="logo">
+                </div>
+                <div class="content-footer">
+                    <div class="info-footer">
+                        <h1>Informações</h1>
+                        <a href="#"><p>Sobre-nos</p></a>
+                        <a href="#"><p>Politica de Privacidade</p></a>
+                        <a href="#"><p>FAQ</p></a>
+                    </div>
+                    <div class="info-footer">
+                        <h1>Conta</h1>
+                        <a href="#"><p>Perfil</p></a>
+                        <a href="#"><p>Posts</p></a>
+                        <a href="#"><p>Serviços</p></a>
+                    </div>
+                    <div class="info-footer">
+                        <h1>Contate-nos</h1>
+                        <a href="#"><p>Fale conosco</p></a>
+                        <a href="#"><p>freela@flex.com</p></a>
                     </div>
                 </div>
-            </article>
-            <aside 
-                data-aos="fade-left"
-                data-aos-duration="2000"
-            >
-                <img class="home-img" src="/FreelaFlex/assets/image/homeIMG.svg" alt="homeIMG">
-            </aside>
-        </section>
-        <section class="carrou"
-            data-aos="fade-up"
-            data-aos-duration="2000"
-        >
-            <div class="pic-ctn">
-                <img src="/FreelaFlex/assets/image/programming-pic.jpg" alt="" class="pic">
-                <img src="/FreelaFlex/assets/image/audio-pic.jpg" alt="" class="pic">
-                <img src="/FreelaFlex/assets/image/marketing-pic.jpg" alt="" class="pic">
-                <img src="/FreelaFlex/assets/image/video-pic.jpg" alt="" class="pic">
-                <img src="/FreelaFlex/assets/image/bulding-pic.jpg" alt="" class="pic">
-            </div>
-            <article class="text-carrou">
-                <div class="underline-home2"></div>
-                <div class="div-Main">
-                    <h3 class="title-main">Serviços</h3>
-                    <p class="p-main">Encontre freelancers qualificados para diversos serviços, desde design gráfico e desenvolvimento web até redação e marketing digital. Soluções sob medida, entregues com qualidade e no prazo.</p>
-            </article>  
-        </section>
-    </main>
-        <footer>
-            <div id="footer-content">
-                <img id="logo-footer" class="logo" src="/FreelaFlex/assets/image/logoLight.svg" alt="logo">
-                <ul class="footer-list">
-                    
-                    <li class="footer-title">
-                        <h3 class="footer-underline">Informações</h3>
-                        <div class="underline"></div>
-                    </li>
-                    <li>
-                        <a href="#" class="footer-link">Sobre-nos</a>
-                    </li>
-                    <li>
-                        <a href="#" class="footer-link">Privacidade</a>
-                    </li>
-                    <li>
-                        <a href="#" class="footer-link">FAQ/Contato</a>
-                    </li>
-                </ul>
-                
-                <ul class="footer-list"> 
-                    <li class="footer-title">
-                        <h3 class="footer-underline">Conta</h3>
-                        <div class="underline2"></div>
-                    </li>
-                    <li>
-                        <a href="#" class="footer-link">Perfil</a>
-                    </li>
-                    <li>
-                        <a href="#" class="footer-link">Publicações</a>
-                    </li>
-                    <li>
-                        <a href="#" class="footer-link">Serviços</a>
-                    </li>
-                </ul>
-                
-                <div class="footer-list">
-                    <li class="footer-title">
-                        <h3 class="footer-underline">Contate-nos</h3>
-                        <div class="underline"></div>
-                    </li>
-                    <li>
-                        <a href="#" class="footer-link">Fale conosco</a>
-                    </li>
-                    <li>
-                        <a href="#" class="footer-link">Freela@flex.com</a>
-                    </li>
-                </div>
-
-                <div id="footer-social-media">
-                        <a href="#" class="footer-link" id="github">
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                        <a href="#" class="footer-link" id="facebook">
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </a>
-                        <a href="#" class="footer-link" id="instagram">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                        <a href="#" class="footer-link" id="linkedin">
-                            <i class="fa-brands fa-linkedin-in"></i>
-                        </a>
+                <div class="rede-footer">
+                    <i class="fa-brands fa-github"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin"></i>
                 </div>
             </div>
-        </div>
-            <div class="footer-copy">
-                <p id="copyritht">FreelaFlex © 2024 | FreelaFlex - Todos direitos reservados.</p>
-            </div>
+            
+            <p class="direct-footer">
+                FreelaFlex &copy; 2024 | FreelaFlex - Todos direitos reservados.
+            </p>
         </footer>
 
-    <script src="/FreelaFlex/js/script.js"></script>
-    <script src="/FreelaFlex/js/aos.js"></script>
+        <script src="./js/script.js"></script>
+        <script src="./js/aos.js"></script>
     </body>
 </html>
