@@ -537,6 +537,7 @@ img:nth-child(5) {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     width: 100%;
+    color: var(--light-Letter);
 }
 
 /*  checkobox as button */
