@@ -25,5 +25,5 @@ https://www.figma.com/design/CMe3vke0hjx2sPRbMI2Bru/FreelaFlex?node-id=0-1&t=1Ii
 ## Feito por:
 
 * <a href="https://github.com/devraffles"> Rafael dos Santos Giorgi </a> - Dev Fullstack
-* <a href="https://github.com/Kaua-programin"> Kauã Hipólito Rodrigues </a> - Dev Front-end
+* <a href="https://github.com/Kaua-programin"> Kauã Hipólito Rodrigues </a> - Dev Fullstack
 * <a href="https://github.com/LucaLevanteze"> Luca Silva Levanteze </a> - UI/UX Designer & Dev Front-End
