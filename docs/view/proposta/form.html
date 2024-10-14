@@ -30,7 +30,7 @@
                 </ul>
             </nav>
             
-            <input type="checkbox" id="toggle" class="toggle">
+            <input type="checkbox" id="toggle" name="toggle" class="toggle">
             <label class="label" for="toggle">
                 <i class="fas fa-sun"></i>
                 <i class="fas fa-moon"></i>
@@ -48,14 +48,14 @@
                                 <h2 class="title-card">Sua Oferta</h2>
                                 <div class="input-cards">
                                     <h3 class="tipo-input-card">R$</h3>
-                                    <input class="input-card" type="number" required  placeholder="XX,XX">
+                                    <input class="input-card" type="number" name="price" required  placeholder="XX,XX">
                                 </div>
                             </div>
                             <div class="card">
                                 <h2 class="title-card">Duração estimada</h2>
                                 <div class="input-cards">
                                     <h3 class="tipo-input-card">Dias</h3>
-                                    <input class="input-card" type="date" required placeholder="XX/XX/XXXX">
+                                    <input class="input-card" type="date" name="data" required placeholder="XX/XX/XXXX">
                                 </div>
                             </div>
                         </div>
@@ -66,39 +66,39 @@
                             <div class="button-text-content">
                                 <div class="cat">
                                     <label>
-                                       <input type="checkbox" value="Design e Multimedia"><span>Design e Multimedia</span> 
+                                       <input type="checkbox" name="area" value="Design e Multimedia"><span>Design e Multimedia</span> 
                                     </label>
                                 </div>
                                 <div class="cat">
                                     <label>
-                                       <input type="checkbox" value="Tradução e conteúdos"><span>Tradução e conteúdos</span> 
+                                       <input type="checkbox" name="area" value="Tradução e conteúdos"><span>Tradução e conteúdos</span> 
                                     </label>
                                 </div>
                                 <div class="cat">
                                     <label>
-                                       <input type="checkbox" value="Marketing e Vendas"><span>Marketing e Vendas</span> 
+                                       <input type="checkbox" name="area" value="Marketing e Vendas"><span>Marketing e Vendas</span> 
                                     </label>
                                 </div>
                                 <div class="cat">
                                     <label>
-                                       <input type="checkbox" value="Jurídico"><span>Jurídico</span> 
+                                       <input type="checkbox" name="area" value="Jurídico"><span>Jurídico</span> 
                                     </label>
                                 </div>
                             </div>
                             <div class="button-text-content">
                                 <div class="cat">
                                     <label>
-                                       <input type="checkbox" value="Finanças e Administração"><span>Finanças e Administração</span> 
+                                       <input type="checkbox" name="area" value="Finanças e Administração"><span>Finanças e Administração</span> 
                                     </label>
                                 </div>
                                 <div class="cat">
                                     <label>
-                                       <input type="checkbox" value="Engenharia e Manufatura"><span>Engenharia e Manufatura</span> 
+                                       <input type="checkbox" name="area" value="Engenharia e Manufatura"><span>Engenharia e Manufatura</span> 
                                     </label>
                                 </div>
                                 <div class="cat">
                                     <label>
-                                       <input type="checkbox" value="TI e Programação"><span>TI e Programação</span> 
+                                       <input type="checkbox" name="area" value="TI e Programação"><span>TI e Programação</span> 
                                     </label>
                                 </div>
                             </div>
@@ -109,9 +109,9 @@
                             <div class="card-text">
                                 <h2 class="title-card">Dados Pessoais</h2>
                                 <div class="input-text-content">
-                                    <input class="input-text" type="text" required placeholder="Nome">
-                                    <input class="input-text" type="tel" maxlength="19" pattern="+\d{2} \(\d{2}\) \d{4,5}-\d{4}" required placeholder="Telefone">
-                                    <input class="input-text" type="email" required placeholder="Email">
+                                    <input class="input-text" name="name" type="text" required placeholder="Nome">
+                                    <input class="input-text"  name="phone" type="tel" maxlength="19" pattern="+\d{2} \(\d{2}\) \d{4,5}-\d{4}" required placeholder="Telefone">
+                                    <input class="input-text"  name="email" type="email" required placeholder="Email">
                                 </div>
                             </div>
                         </div>
@@ -121,7 +121,7 @@
                             <div class="card-text">
                                 <h2 class="title-card">Detalhes</h2>
                                 <div class="input-text-content">
-                                    <textarea rows="5" cols="120" required placeholder="Detalhes de como vai ser feito o projeto"></textarea>
+                                    <textarea rows="5" cols="120" name="detalhes" required placeholder="Detalhes de como vai ser feito o projeto"></textarea>
                                 </div>
                             </div>
                         </div>
