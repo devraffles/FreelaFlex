@@ -30,7 +30,7 @@
                 </ul>
             </nav>
             
-            <input type="checkbox" id="toggle" class="toggle">
+            <input type="checkbox" id="toggle" name="toggle" class="toggle">
             <label class="label" for="toggle">
                 <i class="fas fa-sun"></i>
                 <i class="fas fa-moon"></i>
@@ -45,7 +45,7 @@
                         <div class="nome-proj">
                             <button id="btnNomeProjeto" class="inlineButton"><i class="fa-solid fa-pen-to-square"></i></button>
                             <span id="spnNomeProjeto" class="show">Nome do Projeto</span>
-                            <input class="input-text hide" type="text" id="txtNomeProjeto" required placeholder="Nome do Projeto">
+                            <input class="input-text hide" type="text" id="txtNomeProjeto" name="nomeProjeto" required placeholder="Nome do Projeto">
                         </div>
                         <div class="qtd-frela">
                             <span id="spnQtdFreela" class="show">
@@ -60,7 +60,7 @@
                             <div class="descricao">
                                 <button id="btnDescricao" class="inlineButton"><i class="fa-solid fa-pen-to-square"></i></button>
                                 <span id="spnDescricao" class="show">Descrição...</span>
-                                <textarea oninput="auto_grow(this)" rows="1" cols="30" id="txtDescricao" class="input-text-area hide" type="text" required placeholder="Descrição..."></textarea>
+                                <textarea oninput="auto_grow(this)" rows="1" cols="30" id="txtDescricao" name="txtDescricao" class="input-text-area hide" type="text" required placeholder="Descrição..."></textarea>
                             </div>
                         </div>
                     </div>
@@ -70,7 +70,7 @@
                             <div class="habilidades">
                                 <button id="btnHabilidades" class="inlineButton"><i class="fa-solid fa-pen-to-square"></i></button>
                                 <span id="spnHabilidades" class="show">Habilidades...</span>
-                                <textarea oninput="auto_grow(this)" rows="1" cols="30" id="txtHabilidades" class="input-text-area hide" type="text" required placeholder="Habilidades..."></textarea>
+                                <textarea oninput="auto_grow(this)" rows="1" cols="30" id="txtHabilidades" name="txtHabilidades" class="input-text-area hide" type="text" required placeholder="Habilidades..."></textarea>
                             </div>
                         </div>
                     </div>
@@ -90,37 +90,37 @@
                             <div class="button-text-content">
                                 <div class="cat">
                                     <label>
-                                       <input type="checkbox" value="Design e Multimedia"><span>Design e Multimedia</span> 
+                                       <input type="checkbox" name="area" value="Design e Multimedia"><span>Design e Multimedia</span> 
                                     </label>
                                 </div>
                                 <div class="cat">
                                     <label>
-                                       <input type="checkbox" value="Tradução e conteúdos"><span>Tradução e conteúdos</span> 
+                                       <input type="checkbox" name="area" value="Tradução e conteúdos"><span>Tradução e conteúdos</span> 
                                     </label>
                                 </div>
                                 <div class="cat">
                                     <label>
-                                       <input type="checkbox" value="Marketing e Vendas"><span>Marketing e Vendas</span> 
+                                       <input type="checkbox" name="area" value="Marketing e Vendas"><span>Marketing e Vendas</span> 
                                     </label>
                                 </div>
                                 <div class="cat">
                                     <label>
-                                       <input type="checkbox" value="Jurídico"><span>Jurídico</span> 
+                                       <input type="checkbox" name="area" value="Jurídico"><span>Jurídico</span> 
                                     </label>
                                 </div>
                                 <div class="cat">
                                     <label>
-                                       <input type="checkbox" value="Finanças e Administração"><span>Finanças e Administração</span> 
+                                       <input type="checkbox" name="area" value="Finanças e Administração"><span>Finanças e Administração</span> 
                                     </label>
                                 </div>
                                 <div class="cat">
                                     <label>
-                                       <input type="checkbox" value="Engenharia e Manufatura"><span>Engenharia e Manufatura</span> 
+                                       <input type="checkbox" name="area" value="Engenharia e Manufatura"><span>Engenharia e Manufatura</span> 
                                     </label>
                                 </div>
                                 <div class="cat">
                                     <label>
-                                       <input type="checkbox" value="TI e Programação"><span>TI e Programação</span> 
+                                       <input type="checkbox" name="area" value="TI e Programação"><span>TI e Programação</span> 
                                     </label>
                                 </div>
                             </div>
