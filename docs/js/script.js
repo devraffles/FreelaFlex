@@ -54,9 +54,7 @@ if (inputNomeProjeto) {
   inputNomeProjeto.addEventListener("keypress", function(e) {
     if (e.key === 'Enter') {
       e.preventDefault();
-      console.log(inputNomeProjeto.value);
-      console.log(spanNomeProjeto.innerHTML);
-      spanNomeProjeto.innerHTML = inputNomeProjeto.value;
+      spanNomeProjeto.innerHTML = inputDescricao.value;
       spanNomeProjeto.classList.remove('hide');
       spanNomeProjeto.classList.add('show');
       inputNomeProjeto.classList.remove('show');
@@ -84,8 +82,6 @@ if (inputDescricao) {
   inputDescricao.addEventListener("keypress", function(e) {
     if (e.key === 'Enter') {
       e.preventDefault();
-      console.log(inputDescricao.value);
-      console.log(spanDescricao.innerHTML);
       spanDescricao.innerHTML = inputDescricao.value;
       spanDescricao.classList.remove('hide');
       spanDescricao.classList.add('show');
@@ -114,8 +110,6 @@ if (txtHabilidades) {
   txtHabilidades.addEventListener("keypress", function(e) {
     if (e.key === 'Enter') {
       e.preventDefault();
-      console.log(txtHabilidades.value);
-      console.log(spnHabilidades.innerHTML);
       spnHabilidades.innerHTML = txtHabilidades.value;
       spnHabilidades.classList.remove('hide');
       spnHabilidades.classList.add('show');
