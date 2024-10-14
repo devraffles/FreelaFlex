@@ -43,7 +43,6 @@ const btnNomeProjeto = document.getElementById("btnNomeProjeto");
 if (btnNomeProjeto) {
   btnNomeProjeto.addEventListener("click", function(e) {
       e.preventDefault();
-      inputNomeProjeto.value = spanNomeProjeto.innerHTML;
       spanNomeProjeto.classList.remove('show');
       spanNomeProjeto.classList.add('hide');
       inputNomeProjeto.classList.remove('hide');
