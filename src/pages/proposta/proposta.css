@@ -1,0 +1,206 @@
+/* ========================== PROPOSTA FORM MAIN ========================== */
+.main-proposta-form{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--light-nav);
+  border-radius: 18px;
+  min-height: fit-content;
+  width: 90%;
+  margin-left: 5%;
+  right: 5%;
+  padding: 20px;
+  color: var(--light-Lbtn);
+  justify-content: center;
+  align-items: center;
+}
+
+.row-card{
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+.input-text-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+  margin: 14px;
+  flex-wrap: wrap;
+}
+
+.input-text-content textarea{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.button-text-content{
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.inputs-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  gap: 10px;
+  flex-basis: 100%;
+  flex-grow: 2;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.05s;
+  user-select: none;
+}
+
+.input-cards{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.input-cards h3{
+  display: block;
+  background-color: var(--light-DMbtn);
+  padding: 5px;
+  border-radius: 15px 0px 0px 15px;
+}
+
+.input-cards input{
+  display: block;
+  background-color: var(--light-Lbtn);
+  padding: 14px;
+  border-radius: 0px 15px 15px 0px;
+  border: 0;
+  color: var(--light-nav);
+  color-scheme: var(--light-nav);
+}
+
+.input-cards input::-webkit-calendar-picker-indicator {
+  filter: var(--input-data);
+}
+
+.card-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card-text textarea{
+  display: block;
+  background-color: var(--light-DMbtn);
+  color: var(--light-Letter);
+  padding: 14px;
+  border-radius: 15px;
+  border: 0;
+  resize: none;
+}
+
+.input-text{
+  display: block;
+  background-color: var(--light-DMbtn);
+  color: var(--light-Letter);
+  padding: 8px;
+  border-radius: 15px;
+  border: 0;
+}
+
+.input-text-area{
+  display: block;
+  background-color: var(--light-DMbtn);
+  padding: 8px;
+  border-radius: 15px;
+  border: 0;
+  resize: none;
+  overflow: hidden;
+  min-height: 50px;
+  max-height: 200px;
+  color: var(--light-Letter);
+}
+
+#spnDescricao, #spnHabilidades{
+  max-width: 100%;
+}
+
+.input-text-area textarea{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  color: var(--light-Letter);
+}
+.cat{
+  margin: 1px;
+  border-radius: 4px;
+  border: 1px solid var(--light-Lbtn);
+  overflow: hidden;
+  float: left;
+  border-radius: 15px;
+  box-shadow: 0px 3px 4px rgb(0 0 0 / 25%);
+}
+
+.cat label {
+  float: left; 
+  line-height: 2em;
+  width: 14em; 
+  height: 2.4em;
+}
+
+.cat label span {
+  text-align: center;
+  padding: 3px 0;
+  display: block;
+}
+
+.cat label input {
+  position: absolute;
+  display: none;
+  color: var(--light-Lbtn) !important;
+}
+.cat label input + span{color: var(--light-Lbtn); cursor: pointer;}
+
+
+.cat input:checked + span {
+  color: #ffffff;
+  background-color: var(--light-Lhover);
+  border-radius: 10px;
+  height: 2.4em;
+}
+
+.content-proposta{
+  margin: 14px;
+}
+
+.btn-form-proposta{
+  background-color: var(--light-Lbtn);
+  padding: 14px 28px;
+  border-radius: 28px;
+  color: var(--light-nav);
+  border: 0;
+  box-shadow: 0px 3px 4px rgb(0 0 0 / 25%);
+  cursor: pointer;
+}
+
+.btn-form-proposta:hover{
+  background-color: var(--light-DMfill);
+  color: #f2f2f2;
+}

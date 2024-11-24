@@ -1,0 +1,104 @@
+/* ========================== FOOTER ========================== */
+.footer{
+    background-color: var(--light-nav);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    border-radius: 40px 40px 0px 0px;
+    box-shadow: 0px 4px 20px rgb(0 0 0 / 45%);
+  }
+  
+  .container-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    width: 100%;
+    padding-left: 0.6%;
+    padding-right: 0.6%;
+    padding-top: 20px;
+  }
+  
+  .content-footer{
+    display: flex;
+    justify-content: space-between;
+    flex: 1 1 auto;
+    margin: 0 5% 0 5%;
+  }
+  
+  .direct-footer{
+    margin-top: 14px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .info-footer, .rede-footer, .direct-footer {
+    color: var( --light-Lbtn);
+  }
+  
+  .info-footer h1{
+    position: relative;
+    margin-bottom: 14px;
+  }
+  
+  .info-footer h1::after{
+    content: "";
+    position: absolute;
+    background-color: var(--light-Lhover);
+    height: 3px;
+    width: 100%;
+    left: 0;
+    bottom: -4px;
+    border-radius: 4px;
+  }
+  
+  .info-footer a:hover {
+    color: var(--light-Lhover);
+  }
+  
+  .rede-footer {
+    font-size: x-large;
+  }
+  
+  .rede-footer :hover {
+    color: var(--light-Lhover);
+    cursor: pointer;
+  }
+  
+  .rede-footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 8px
+  }
+  
+  @media (max-width: 768px) {
+    .footer{
+        flex-direction: column;
+    }
+    .container-footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .content-footer{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 14px;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+    .rede-footer svg{
+        width: 6vw;
+        height: 8vh;
+    }
+    .info-footer{
+        width: 90%;
+    }
+  }
+  

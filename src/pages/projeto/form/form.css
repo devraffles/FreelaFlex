@@ -1,0 +1,126 @@
+/* ========================== PROJETO FORM MAIN ========================== */
+.main-projeto-form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  flex-direction: column;
+}
+
+.row-projeto-form{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+}
+
+.nome-proj{
+  background-color: var(--light-DMbtn);
+  padding: 14px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  box-shadow: 0px 3px 4px rgb(0 0 0 / 25%);
+}
+
+.descricao{
+  background-color: var(--light-DMbtn);
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  margin-top: 8px;
+  box-shadow: 0px 3px 4px rgb(0 0 0 / 25%);
+}
+
+.descricao input{
+  width: 100%;
+}
+
+.descricao-div{
+  width: 100%;
+}
+
+.habilidades{
+  background-color: var(--light-DMbtn);
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  margin-top: 8px;
+  box-shadow: 0px 3px 4px rgb(0 0 0 / 25%);
+}
+
+.habilidades input{
+  width: 100%;
+}
+
+.habilidades-div{
+  width: 100%;
+}
+
+.qtd-frela{
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.inlineButton{
+  border: none;
+  background-color: transparent;
+}
+
+.hide {
+  display: none !important;
+}
+
+.show {
+  display: flex;
+}
+
+.section-projeto-form{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 90vw;
+  background-color: var(--light-nav);
+  border-radius: 20px;
+  margin-bottom: 24px;
+  padding-left: 0;
+  padding-right: 0;
+  padding: 14px;
+  color: var(--light-Lbtn);
+}
+
+.qtd-frela{
+  align-items: end;
+}
+
+.row-btn{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  margin-bottom: 14px;
+  margin-top: 14px;
+}
+
+.input-text{
+  color: var(--light-Letter);
+}
+
+@media (max-width: 768px) {
+  .row-projeto-form{
+      justify-content: space-between;
+      width: 90%;
+      margin-left: 5%;
+      margin-right: 5%;
+  }
+}

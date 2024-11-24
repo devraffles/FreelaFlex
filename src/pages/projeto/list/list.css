@@ -1,0 +1,356 @@
+/* ========================== PROJETO LIST MAIN ========================== */
+.main-projeto-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: row;
+    width: 92%;
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+  
+  .section-projeto-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 14px;
+    color: var(--light-Lbtn);
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+  }
+  
+  .filter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 14px;
+  }
+  
+  .btn-filtro {
+    display: none;
+  }
+  
+  .category{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--light-nav);
+    border-radius: 20px;
+    padding: 14px;
+    color: var(--light-Lbtn);
+    width: 100%;
+  }
+  
+  .habilidades-filter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--light-nav);
+    border-radius: 20px;
+    padding: 14px;
+    color: var(--light-Lbtn);
+    width: 100%;
+  }
+  
+  .idioma{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--light-nav);
+    border-radius: 20px;
+    padding: 14px;
+    color: var(--light-Lbtn);
+    width: 100%;
+  }
+  
+  .filter-title h1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .filter-title fieldset {
+    border: none;
+  }
+  
+  .filter-title h1::after{
+    content: "";
+    position: absolute;
+    background-color: var(--light-Lhover);
+    height: 3px;
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    left: 0;
+    bottom: -4px;
+    border-radius: 4px;
+  }
+  
+  .cat-idioma{
+    border-radius: 4px;
+    border: 1px solid var(--light-Lbtn);
+    overflow: hidden;
+    float: left;
+    border-radius: 15px;
+    box-shadow: 0px 3px 4px rgb(0 0 0 / 25%);
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  .cat-idioma label {
+    float: left; 
+    line-height: 2em;
+    width: 8em; 
+    height: 2.4em;
+    font-size: 14px;
+  }
+  
+  .cat-idioma label span {
+    text-align: center;
+    padding: 3px 0;
+    display: block;
+    user-select: none;
+  }
+  
+  .qtd-frela{
+    align-items: end;
+  }
+  
+  .qtd-frela i{
+    font-size: 32px;
+  }
+
+  .cat-idioma label input {
+    position: absolute;
+    display: none;
+    color: var(--light-Lbtn) !important;
+  }
+  .cat-idioma label input + span{color: var(--light-Lbtn); cursor: pointer;}
+  
+  
+  .cat-idioma input:checked + span {
+    color: #ffffff;
+    background-color: var(--light-Lhover);
+    border-radius: 10px;
+    height: 2.4em;
+  }
+  
+  .select{
+    margin: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .select select{
+    text-align: left;
+    width: 24rem;
+    padding: 4px;
+    border: 0;
+    background-color: var(--light-Lbtn);
+    border-radius: 24px;
+    cursor: pointer;
+    color: var(--light-nav);
+  }
+  
+  .checkbox-filter{
+    margin: 14px;
+  }
+  
+  .checkbox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  
+  .checkbox label{
+    padding-left: 6px;
+    cursor: pointer;
+  }
+  
+  .checkbox-input {
+    appearance: none;
+    -webkit-appearance: none;
+    border: 0.2rem solid var(--light-Lhover);
+    background-color: var(--light-nav);
+    border-radius: 50%;
+    height: 1.2rem;
+    width: 1.2rem;
+    margin-right: 0.5rem;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .checkbox-input:checked {
+    outline-color: var(--light-nav);
+    background-color: var(--light-Lhover);
+  }
+  
+  @keyframes toggleOnRadio {
+    0% {
+        outline-offset: 0;
+    }
+  
+    100% {
+        outline-offset: -0.2rem;
+    }
+  }
+  
+  .row-projeto-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+  }
+  .text-start{
+    text-align: start;
+  }
+  .projetos{
+    background-color: var(--light-nav);
+    padding: 14px;
+    border-radius: 24px;
+    width: 90%;
+    margin-left: 5% ;
+    margin-right: 5% ;
+
+  }
+  
+  .descricao-div h1{
+    margin-bottom: 8px;
+  }
+  
+  .habilidades-div h1{
+    margin-bottom: 8px;
+  }
+  
+  
+  .btn-list-projeto{
+    background-color: var(--light-Lbtn);
+    padding: 10px 28px;
+    border-radius: 28px;
+    color: var(--light-nav);
+    border: 0;
+    box-shadow: 0px 3px 4px rgb(0 0 0 / 25%);
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .btn-list-projeto:hover{
+    background-color: var(--light-DMfill);
+    color: #f2f2f2;
+  }
+  
+  .row-btn-projeto{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    margin-bottom: 14px;
+    margin-top: 14px;
+    gap: 14px;
+  }
+  
+  .qtd_proposta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--light-Lbtn);
+    padding: 10px 28px;
+    border-radius: 28px;
+    font-size: 12px;
+    color: var(--light-nav);
+    box-shadow: 0px 3px 4px rgb(0 0 0 / 25%);
+  }
+  
+  .qtd_proposta span{
+    color: var(--light-Lhover);
+  }
+  
+  .btn-filtro {
+    display: none;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .btn-filtro button{
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    margin-top: 24px;
+    margin-right: 24px;
+    font-size: 24px;
+    background-color: var(--light-Lbtn);
+    border-radius: 100%;
+    border: none;
+    user-select: none;
+  }
+  
+  .fa-sliders{
+    color: var(--light-nav);
+  }
+  .main-projeto-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .projeto-list{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  @media (max-width: 768px) {
+    .main-projeto-list{
+        flex-direction: column;
+        overflow: hidden;
+    }
+  
+    .filter-title{
+        width: 100%;
+    }
+  
+    .filter-title h1{
+        font-size: 22px;
+    }
+  
+    .btn-list-projeto{
+        font-size: 10px;
+    }
+  
+    .qtd_proposta{
+        font-size: 10px;
+    }
+  
+    .select select{
+        width: 100%;
+        cursor: pointer;
+    }
+    
+    .filter {
+        width: 100%;
+        display: none;
+    }
+    
+    .btn-filtro {
+        display: flex;
+    }
+  }
+  
+  
