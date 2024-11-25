@@ -118,7 +118,7 @@ export default function BoxMyProjects({page, dados, DeleteProject,DeletaProposta
                                         </div>
                                             
                                         <div className="card">
-                                            <h2 className="title-card">Sua Oferta</h2>
+                                            <h2 className="title-card">Oferta</h2>
                                             <div className="input-cards">
                                                 <h3 className="tipo-input-card">R$</h3>
                                                 <input
@@ -127,6 +127,7 @@ export default function BoxMyProjects({page, dados, DeleteProject,DeletaProposta
                                                     name="price"
                                                     required
                                                     placeholder={item.oferta}
+                                                    readOnly
                                                 />
                                             </div>
                                         </div>
