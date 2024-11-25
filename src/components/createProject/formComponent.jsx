@@ -83,7 +83,7 @@ export default function FormComponent({ funcformSub, funcformCreat, funcformUpda
                             <h1>Selecione as categorias do projeto</h1>
                             <div className="row-projeto-form">
                                 <div className="card">
-                                    <SelectCargo page="projeto" register={registroCargo} />
+                                    <SelectCargo register={registroCargo} />
                                 </div>
                             </div>
                             <div className="row-btn">
@@ -159,7 +159,7 @@ export default function FormComponent({ funcformSub, funcformCreat, funcformUpda
                             <h1>Selecione as categorias do projeto</h1>
                             <div className="row-projeto-form">
                                 <div className="card">
-                                    <SelectCargo page="projeto" register={registroCargo} />
+                                    <SelectCargo register={registroCargo} />
                                 </div>
                             </div>
                         

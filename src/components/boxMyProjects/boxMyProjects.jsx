@@ -3,10 +3,29 @@ import { faUser } from '@fortawesome/free-regular-svg-icons';
 import '../boxMyProjects/boxMyProjects.css';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
+import { useState,useEffect } from 'react';
+import UrlAxios from '../../urlaxios/axios';
 
-export default function BoxMyProjects({page, dados, DeleteProject}) {
+
+export default function BoxMyProjects({page, dados, DeleteProject,DeletaProposta,id}) {
     const navigate = useNavigate()
     const dadosProjetoProps = dados
+
+    const [proposta, setProposta] = useState([])
+
+    useEffect(() => {
+        async function handlePropostaProjeto() {
+            try{  
+                const response = await UrlAxios.get(`/proposta/projeto?codProjeto=${id.id}`)
+    
+                return setProposta(response.data)
+            }catch (error) {
+                console.error("Erro ao criar projeto:", error);
+            }
+        }
+        handlePropostaProjeto()
+        
+    }, [setProposta, id]);
     return (
         <section className="section-projeto-form" data-aos="fade-right" data-aos-duration="2000">
             <div className="row-projeto-form">
@@ -53,25 +72,35 @@ export default function BoxMyProjects({page, dados, DeleteProject}) {
                         </button>
 
                         <button className="button-delete" onClick={() =>DeleteProject(dadosProjetoProps.codprojeto)}>Deletar</button>
-                        <Link to="/myproposals">
-                            <button className='button-proposta'>Proposta</button>
-                        </Link>
+                        
+                        <button className='button-proposta' onClick={() => navigate(`/myproposals/${dadosProjetoProps.codprojeto}`)}>Proposta</button>
+                        
                     </div>
                 ) : (
                     <>
+                    {proposta.map((item) =>(
+                        <>
+
+                        <div className="row-projeto-form">
+                        <div className="descricao-div">
+                                <h1>Detalhes:</h1>
+                                <p>{item?.descricao}</p>
+                            </div>
+                        </div>
+                        
                         <div className="row-projeto-form">
                             <div className="habilidades-div">
                                 <h1>Dados Pessoais:</h1>
-                                <p>Nome</p>
-                                <p>Telefone</p>
-                                <p>E-mail</p>
+                                <p>{item.nome}</p>
+                                <p>{item.telefone}</p>
+                                <p>{item.email}</p>
                             </div>
                         </div>
                         <div className='content-myproposal'>  
                             <div className="card">
                                 <h2 className="title-cargo">Cargo</h2>
                                 <div className="input-cargos">
-                                    <input className="input-cargo" type="text" name="cargo" readOnly />
+                                    <input className="input-cargo" placeholder={item.nomecargo} type="text" name="cargo" readOnly />
                                 </div>
                             </div>
                                 
@@ -84,7 +113,7 @@ export default function BoxMyProjects({page, dados, DeleteProject}) {
                                         type="number"
                                         name="price"
                                         required
-                                        placeholder="XX,XX"
+                                        placeholder={item.oferta}
                                     />
                                 </div>
                             </div>
@@ -95,22 +124,25 @@ export default function BoxMyProjects({page, dados, DeleteProject}) {
                                     <h3 className="tipo-input-card">Dias</h3>
                                     <input
                                         className="input-card"
-                                        type="date"
+                                        type="text"
                                         name="data"
                                         required
-                                        placeholder="XX/XX/XXXX"
+                                        placeholder={item.duracao_estimada}
+                                        readOnly
                                     />
                                 </div>
                             </div>
                         </div>
                         <div className="row-projeto-form">
                             <div className='box-button-proposal'>
-                                <Link> 
-                                    <button className='button-proposal'>Aceitar</button>
-                                </Link> 
+                                
+                                    <button className='button-proposal' onClick={() =>DeletaProposta(item.codproposta)}>Aceitar</button>
+                            
                             </div>
                         </div>
-                    </>
+                        </>
+                        ))}
+                        </>
                 )}
             </div>
         </section>

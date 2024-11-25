@@ -1,8 +1,8 @@
 import '../../pages/projeto/list/list.css'
-import { Link } from 'react-router-dom'
-
+import { useNavigate } from 'react-router-dom'
 
 export default function ListProject({dados}) {
+    const navigate = useNavigate()
     return(
         <>
         {dados.map((item)=>(
@@ -29,11 +29,9 @@ export default function ListProject({dados}) {
                                     </div>
                                 </div>
                                 <div className="row-btn-projeto">
-                                    <Link>
-                                        <button className="btn-list-projeto">
+                                        <button className="btn-list-projeto" onClick={() =>navigate(`/proposta/${item.codprojeto}`)}>
                                             Fazer proposta
-                                        </button>
-                                    </Link>
+                                        </button>  
                                 </div>
                             </div>
                         </div>

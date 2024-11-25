@@ -41,12 +41,13 @@ export default function App() {
             <Routes>
 
               <Route path='/' element={< Home/>} />
-              <Route path='/proposta' element={<Proposta />} />
+              <Route path='/proposta/:id' element={<Proposta />} />
               <Route path='/projeto' element={<List />} />
               <Route path='/atualiza/projeto/:id' element={<AtualizarProjeto />} />
               <Route path='/criar/projeto' element={<Projeto />} />
               <Route path='/myprojects' element={<MyProjects />}/>
-              <Route path='/myproposals' element={<MyProposal/>}/>
+              <Route path='/myproposals/:id' element={<MyProposal/>}/>
+
               <Route path='*' element={<NotFound/>}/>
 
             </Routes>

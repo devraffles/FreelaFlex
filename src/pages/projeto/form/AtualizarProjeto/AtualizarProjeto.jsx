@@ -32,7 +32,6 @@ export default function AtualizarProjeto() {
     return(<>
     <h1>Editar Projeto</h1>
     <FormComponent funcformSub={handleSubmit} funcformUpdate={handleUpdate} registroCargo={register} registrarInput={register} id={params}/>
-    
     </>
 
       

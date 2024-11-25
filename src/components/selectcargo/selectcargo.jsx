@@ -3,7 +3,7 @@ import "../selectcargo/selectcargo.css";
 import UrlAxios from '../../urlaxios/axios.js';
 import { useEffect, useState } from "react";
 
-export default function SelectCargo({ page, register }) {
+export default function SelectCargo({ page, register , id}) {
     const [categoria, setCategoria] = useState([])
 
     async function handleRequestCategorias() {
@@ -22,35 +22,22 @@ export default function SelectCargo({ page, register }) {
 
     return (
         <div>
-            {page === "projeto" ? (
-                <div className="button-text-content">
-                    {
-                    categoria.map((item) => (
-                        <div className="cat" key={item.codcargo}>
-                            <label>
-                                <input
-                                    type="checkbox"
-                                    value={item.codcargo}
-                                    {...register("cargoSelect", { required: "Selecione ao menos um cargo" })}
-                                />
-                                <span>{item.cargo_nome}</span>
-                            </label>
-                        </div>
-                    ))
-                    }
-                </div>
-            ) : (
-                <div className="button-text-content">
-                    {categoria.map((item) => (
-                        <div className="cat" key={item.codcargo}>
-                            <label>
-                                <input type="radio" name="area" value={item.codcargo} />
-                                <span>{item.cargo_nome}</span>
-                            </label>
-                        </div>
-                    ))}
-                </div>
-            )}
+            <div className="button-text-content">
+                {
+                categoria.map((item) => (
+                    <div className="cat" key={item.codcargo}>
+                        <label>
+                            <input
+                                type="checkbox"
+                                value={item.codcargo}
+                                {...register("cargoSelect", { required: "Selecione ao menos um cargo" })}
+                            />
+                            <span>{item.cargo_nome}</span>
+                        </label>
+                    </div>
+                ))
+                }
+            </div>
         </div>
     );
 }
