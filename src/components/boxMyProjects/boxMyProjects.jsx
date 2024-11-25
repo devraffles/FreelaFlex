@@ -150,7 +150,7 @@ export default function BoxMyProjects({page, dados, DeleteProject,DeletaProposta
                                     <div className="row-projeto-form">
                                         <div className='box-button-proposal'>
                                             
-                                                <button className='button-proposal' onClick={() =>DeletaProposta(item.codprojeto)}>Aceitar</button>
+                                                <button className='button-proposal' onClick={() =>DeletaProposta(item.codproposta)}>Aceitar</button>
                                         
                                         </div>
                                     </div>
