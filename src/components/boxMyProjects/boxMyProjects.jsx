@@ -48,20 +48,28 @@ export default function BoxMyProjects({page, dados, DeleteProject,DeletaProposta
                 
             </div>
             
-            <div className="row-projeto-form">
-                <div className="descricao-div">
-                    {page === "project" ? (<h1>Descrição:</h1>) : (<h1>Detalhes:</h1>)} 
-                    <p>{dadosProjetoProps?.descricao}</p>
-                </div>
-            </div>
-            
-            <div className="row-projeto-form">
-                <div className="habilidades-div">
-                    {page === "project" ? (<h1>Habilidade</h1>) : (<h1>Habilidade:</h1>)} 
-                    <p>{dadosProjetoProps?.habilidades}</p>
-                </div>
-            </div>
-            
+            {
+                page === "project" ? (
+                    <>
+                        <div className="row-projeto-form">
+                            <div className="descricao-div">
+                                {page === "project" ? (<h1>Descrição:</h1>) : (<h1></h1>)} 
+                                <p>{dadosProjetoProps?.descricao}</p>
+                            </div>
+                            </div>
+                            
+                            <div className="row-projeto-form">
+                                <div className="habilidades-div">
+                                    {page === "project" ? (<h1>Habilidade</h1>) : (<h1></h1>)} 
+                                    <p>{dadosProjetoProps?.habilidades}</p>
+                                </div>
+                        </div>
+                    </>
+                ) : (
+                    <>
+                    </>
+                )
+            }
             <div>
                 {page === "project" ? (
                     <div className="button-box">
@@ -87,7 +95,6 @@ export default function BoxMyProjects({page, dados, DeleteProject,DeletaProposta
                                 <p>{item?.descricao}</p>
                             </div>
                         </div>
-                        
                         <div className="row-projeto-form">
                             <div className="habilidades-div">
                                 <h1>Dados Pessoais:</h1>
